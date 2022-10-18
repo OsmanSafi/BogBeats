@@ -1,0 +1,6 @@
+framework module Pods_BOJBeats_BOJBeatsUITests {
+  umbrella header "Pods-BOJBeats-BOJBeatsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
