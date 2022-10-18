@@ -18,6 +18,7 @@
 		B572F00F28FF43C80083DFFE /* BOJBeatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F00E28FF43C80083DFFE /* BOJBeatsUITests.swift */; };
 		B572F01128FF43C80083DFFE /* BOJBeatsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F01028FF43C80083DFFE /* BOJBeatsUITestsLaunchTests.swift */; };
 		B572F01E28FF45CC0083DFFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F01D28FF45CC0083DFFE /* LoginViewController.swift */; };
+		B572F02028FF52900083DFFE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F01F28FF52900083DFFE /* SignUpViewController.swift */; };
 		DADB80760DDD4B11D7DD7BAA /* Pods_BOJBeats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B202CE1CDBC90D558E5DA090 /* Pods_BOJBeats.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		B572F00E28FF43C80083DFFE /* BOJBeatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJBeatsUITests.swift; sourceTree = "<group>"; };
 		B572F01028FF43C80083DFFE /* BOJBeatsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJBeatsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B572F01D28FF45CC0083DFFE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B572F01F28FF52900083DFFE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CC055B2CC4FECB80C61959A1 /* Pods_BOJBeatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOJBeatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9C36788F7CE53CB5C09E5B /* Pods-BOJBeats-BOJBeatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOJBeats-BOJBeatsUITests.debug.xcconfig"; path = "Target Support Files/Pods-BOJBeats-BOJBeatsUITests/Pods-BOJBeats-BOJBeatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 				B572EFF628FF43C80083DFFE /* Assets.xcassets */,
 				B572EFF828FF43C80083DFFE /* LaunchScreen.storyboard */,
 				B572EFFB28FF43C80083DFFE /* Info.plist */,
+				B572F01F28FF52900083DFFE /* SignUpViewController.swift */,
 			);
 			path = BOJBeats;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			files = (
 				B572F01E28FF45CC0083DFFE /* LoginViewController.swift in Sources */,
 				B572EFEE28FF43C50083DFFE /* AppDelegate.swift in Sources */,
+				B572F02028FF52900083DFFE /* SignUpViewController.swift in Sources */,
 				B572EFF028FF43C50083DFFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
