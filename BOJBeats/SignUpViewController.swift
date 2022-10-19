@@ -26,7 +26,6 @@ class SignUpViewController: UIViewController {
         dismiss(animated: true , completion: nil)
     }
     
-    
     @IBAction func onSignUp(_ sender: Any) {
         let user = PFUser()
         user.username = usernameField.text
@@ -39,8 +38,12 @@ class SignUpViewController: UIViewController {
                 print("Error: \(error?.localizedDescription)")
             }
         }
-        
     }
+    
+
+    
+        
+    
     /*
     // MARK: - Navigation
 

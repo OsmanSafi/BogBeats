@@ -61,7 +61,8 @@
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5eZ-f1-u10"/>
+                                    <action selector="SignIn:" destination="EeO-yg-xZR" eventType="touchUpInside" id="sqx-Ho-Nr3"/>
+                                    <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GN4-Tb-Nhl"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="2nh-qe-g8s">
@@ -87,11 +88,29 @@
                     <connections>
                         <outlet property="passwordField" destination="c4e-ID-inI" id="HCM-vq-o7v"/>
                         <outlet property="usernameField" destination="SgS-pP-Bkw" id="gXp-oB-GGK"/>
+                        <segue destination="ZtA-90-0Yb" kind="presentation" identifier="loginSegue" id="5d7-7p-e8s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="EeO-yg-xZR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="68.973214285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OU8-ga-1Mb">
+            <objects>
+                <viewController id="Vcy-lQ-pq8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="not-Vr-Hf4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Kc5-cf-b26"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5m7-sC-0BX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epY-BU-F5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3646.376811594203" y="108.48214285714285"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="9zf-mq-eIo">
@@ -156,7 +175,7 @@
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="onSignUp:" destination="4ks-Ti-EYd" eventType="touchUpInside" id="u1D-1u-tzl"/>
+                                    <action selector="onSignUp:" destination="4ks-Ti-EYd" eventType="touchUpInside" id="fAW-d7-2n8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -169,13 +188,35 @@
                     <connections>
                         <outlet property="passwordField" destination="C2a-ca-6ko" id="YUi-Y0-42b"/>
                         <outlet property="usernameField" destination="2BM-Ur-Gdj" id="Sec-KD-gGJ"/>
+                        <segue destination="ZtA-90-0Yb" kind="presentation" identifier="loginSegue" id="KHO-bL-ig8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gbz-mg-YEk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="831.69642857142856"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UnT-ou-kRe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZtA-90-0Yb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mpX-qU-5Py">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vcy-lQ-pq8" kind="relationship" relationship="rootViewController" id="Vos-dp-bs9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tG2-td-Edu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="108"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5d7-7p-e8s"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="space" width="882" height="882"/>
         <systemColor name="systemBackgroundColor">
