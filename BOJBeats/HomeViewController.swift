@@ -8,7 +8,6 @@
 import UIKit
 import Parse
 import MessageInputBar
-import AlamofireImage
 
 class HomeViewController: UIViewController {
 
