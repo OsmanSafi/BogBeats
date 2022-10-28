@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="68.973214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="OU8-ga-1Mb">
             <objects>
-                <viewController id="Vcy-lQ-pq8" sceneMemberID="viewController">
+                <viewController id="Vcy-lQ-pq8" customClass="HomeViewController" customModule="BOJBeats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="not-Vr-Hf4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,13 +109,12 @@
                     <navigationItem key="navigationItem" id="5m7-sC-0BX">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="qN7-hV-uXY">
                             <connections>
-                                <action selector="onLogout:" destination="V31-hT-QoG" id="xOI-bG-04S"/>
+                                <action selector="onLogout:" destination="Vcy-lQ-pq8" id="XZc-UX-329"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epY-BU-F5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="V31-hT-QoG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3646.376811594203" y="108.48214285714285"/>
         </scene>
