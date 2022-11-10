@@ -16,6 +16,7 @@ target 'BOJBeats' do
     # Pods for testing
   end
 
+  pod 'SwiftyJSON'
   pod 'Parse'
   pod 'AlamofireImage'
   pod 'MessageInputBar'

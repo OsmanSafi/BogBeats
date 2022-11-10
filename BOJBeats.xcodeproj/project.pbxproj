@@ -20,6 +20,9 @@
 		B572F01E28FF45CC0083DFFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F01D28FF45CC0083DFFE /* LoginViewController.swift */; };
 		B572F02028FF52900083DFFE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F01F28FF52900083DFFE /* SignUpViewController.swift */; };
 		B5F1FA38290B550E000BEE29 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1FA37290B550E000BEE29 /* HomeViewController.swift */; };
+		B5F1FA3A291C9796000BEE29 /* songTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1FA39291C9796000BEE29 /* songTableViewCell.swift */; };
+		B5F1FA42291CB15C000BEE29 /* songViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1FA41291CB15C000BEE29 /* songViewController.swift */; };
+		B5F1FA44291CB34A000BEE29 /* SongDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1FA43291CB34A000BEE29 /* SongDetailsViewController.swift */; };
 		DADB80760DDD4B11D7DD7BAA /* Pods_BOJBeats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B202CE1CDBC90D558E5DA090 /* Pods_BOJBeats.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,9 @@
 		B572F01D28FF45CC0083DFFE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B572F01F28FF52900083DFFE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5F1FA37290B550E000BEE29 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B5F1FA39291C9796000BEE29 /* songTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = songTableViewCell.swift; sourceTree = "<group>"; };
+		B5F1FA41291CB15C000BEE29 /* songViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = songViewController.swift; sourceTree = "<group>"; };
+		B5F1FA43291CB34A000BEE29 /* SongDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsViewController.swift; sourceTree = "<group>"; };
 		CC055B2CC4FECB80C61959A1 /* Pods_BOJBeatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOJBeatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9C36788F7CE53CB5C09E5B /* Pods-BOJBeats-BOJBeatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOJBeats-BOJBeatsUITests.debug.xcconfig"; path = "Target Support Files/Pods-BOJBeats-BOJBeatsUITests/Pods-BOJBeats-BOJBeatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +158,9 @@
 				B572EFFB28FF43C80083DFFE /* Info.plist */,
 				B572F01F28FF52900083DFFE /* SignUpViewController.swift */,
 				B5F1FA37290B550E000BEE29 /* HomeViewController.swift */,
+				B5F1FA39291C9796000BEE29 /* songTableViewCell.swift */,
+				B5F1FA41291CB15C000BEE29 /* songViewController.swift */,
+				B5F1FA43291CB34A000BEE29 /* SongDetailsViewController.swift */,
 			);
 			path = BOJBeats;
 			sourceTree = "<group>";
@@ -413,9 +422,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F1FA38290B550E000BEE29 /* HomeViewController.swift in Sources */,
+				B5F1FA42291CB15C000BEE29 /* songViewController.swift in Sources */,
 				B572F01E28FF45CC0083DFFE /* LoginViewController.swift in Sources */,
 				B572EFEE28FF43C50083DFFE /* AppDelegate.swift in Sources */,
 				B572F02028FF52900083DFFE /* SignUpViewController.swift in Sources */,
+				B5F1FA3A291C9796000BEE29 /* songTableViewCell.swift in Sources */,
+				B5F1FA44291CB34A000BEE29 /* SongDetailsViewController.swift in Sources */,
 				B572EFF028FF43C50083DFFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
