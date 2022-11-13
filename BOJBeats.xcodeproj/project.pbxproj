@@ -21,6 +21,7 @@
 		B572F02028FF52900083DFFE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F01F28FF52900083DFFE /* SignUpViewController.swift */; };
 		B5F1FA38290B550E000BEE29 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1FA37290B550E000BEE29 /* HomeViewController.swift */; };
 		DADB80760DDD4B11D7DD7BAA /* Pods_BOJBeats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B202CE1CDBC90D558E5DA090 /* Pods_BOJBeats.framework */; };
+		E08415ED291AE92A0065B493 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08415EC291AE92A0065B493 /* SongViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B572F01F28FF52900083DFFE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5F1FA37290B550E000BEE29 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC055B2CC4FECB80C61959A1 /* Pods_BOJBeatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOJBeatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E08415EC291AE92A0065B493 /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
 		FB9C36788F7CE53CB5C09E5B /* Pods-BOJBeats-BOJBeatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOJBeats-BOJBeatsUITests.debug.xcconfig"; path = "Target Support Files/Pods-BOJBeats-BOJBeatsUITests/Pods-BOJBeats-BOJBeatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				B572EFFB28FF43C80083DFFE /* Info.plist */,
 				B572F01F28FF52900083DFFE /* SignUpViewController.swift */,
 				B5F1FA37290B550E000BEE29 /* HomeViewController.swift */,
+				E08415EC291AE92A0065B493 /* SongViewController.swift */,
 			);
 			path = BOJBeats;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				B5F1FA38290B550E000BEE29 /* HomeViewController.swift in Sources */,
 				B572F01E28FF45CC0083DFFE /* LoginViewController.swift in Sources */,
 				B572EFEE28FF43C50083DFFE /* AppDelegate.swift in Sources */,
+				E08415ED291AE92A0065B493 /* SongViewController.swift in Sources */,
 				B572F02028FF52900083DFFE /* SignUpViewController.swift in Sources */,
 				B572EFF028FF43C50083DFFE /* SceneDelegate.swift in Sources */,
 			);
@@ -592,22 +596,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U3K2652PBT;
+				DEVELOPMENT_TEAM = RHJXRH8ZJG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BOJBeats/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.BOJBeats;
+				PRODUCT_BUNDLE_IDENTIFIER = BOJBeats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -621,22 +627,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U3K2652PBT;
+				DEVELOPMENT_TEAM = RHJXRH8ZJG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BOJBeats/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.BOJBeats;
+				PRODUCT_BUNDLE_IDENTIFIER = BOJBeats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
