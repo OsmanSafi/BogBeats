@@ -1,35 +1,25 @@
 //
-//  HomeViewController.swift
+//  SongListViewController.swift
 //  BOJBeats
 //
-//  Created by Jared Lopez on 10/27/22.
+//  Created by Jared Lopez on 11/13/22.
 //
 
 import UIKit
-import Parse
-import MessageInputBar
-import Foundation
 
-class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    
+class SongListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate { 
+
     @IBOutlet weak var tableView: UITableView!
     
-//    array of dictionary
-//    var songs = [[String:Any]]()
-    var songs = Dictionary<String, AnyObject>()
-
+    //    array of dictionary
+    //    var songs = [[String:Any]]()
+        var songs = Dictionary<String, AnyObject>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
+        
         tableView.dataSource = self
         tableView.delegate = self
-        
-        // Do any additional setup after loading the view.
-        print("Hello")
-        
         
         let url = URL(string: "https://spotify23.p.rapidapi.com/artist_singles/?id=2w9zwq3AktTeYYMuhMjju8&offset=0&limit=20")!
 //        if let unwrappedURL = url {
@@ -55,9 +45,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 }
             }
             task.resume()
-        }
-    
 
+        // Do any additional setup after loading the view.
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 10
@@ -74,14 +64,16 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
 
-    @IBAction func onLogout(_ sender: Any) {
-        PFUser.logOut()
-                        
-        let main = UIStoryboard(name: "Main", bundle: nil)
-        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
-                        
-        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
-                        
-        delegate.window?.rootViewController = loginViewController
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+    @IBAction func backButton(_ sender: Any) {
     }
 }
