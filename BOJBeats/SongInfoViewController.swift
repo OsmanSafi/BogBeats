@@ -33,6 +33,8 @@ class SongInfoViewController: UIViewController {
 
     @IBAction func playSong(_ sender: Any) {
     }
+    
     @IBAction func backButtoninfo(_ sender: Any) {
+        dismiss(animated: true , completion: nil)
     }
 }
