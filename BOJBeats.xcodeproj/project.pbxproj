@@ -19,6 +19,9 @@
 		B572F01128FF43C80083DFFE /* BOJBeatsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F01028FF43C80083DFFE /* BOJBeatsUITestsLaunchTests.swift */; };
 		B572F01E28FF45CC0083DFFE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F01D28FF45CC0083DFFE /* LoginViewController.swift */; };
 		B572F02028FF52900083DFFE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572F01F28FF52900083DFFE /* SignUpViewController.swift */; };
+		B5E664BA2921A53500986D3C /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E664B92921A53500986D3C /* SongCell.swift */; };
+		B5E664BC2921A56500986D3C /* SongInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E664BB2921A56500986D3C /* SongInfoViewController.swift */; };
+		B5E664BE2921B22200986D3C /* SongListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E664BD2921B22200986D3C /* SongListViewController.swift */; };
 		B5F1FA38290B550E000BEE29 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F1FA37290B550E000BEE29 /* HomeViewController.swift */; };
 		DADB80760DDD4B11D7DD7BAA /* Pods_BOJBeats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B202CE1CDBC90D558E5DA090 /* Pods_BOJBeats.framework */; };
 		E08415ED291AE92A0065B493 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08415EC291AE92A0065B493 /* SongViewController.swift */; };
@@ -63,6 +66,9 @@
 		B572F01028FF43C80083DFFE /* BOJBeatsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOJBeatsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B572F01D28FF45CC0083DFFE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B572F01F28FF52900083DFFE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B5E664B92921A53500986D3C /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		B5E664BB2921A56500986D3C /* SongInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInfoViewController.swift; sourceTree = "<group>"; };
+		B5E664BD2921B22200986D3C /* SongListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewController.swift; sourceTree = "<group>"; };
 		B5F1FA37290B550E000BEE29 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC055B2CC4FECB80C61959A1 /* Pods_BOJBeatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOJBeatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08415EC291AE92A0065B493 /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +161,9 @@
 				B572F01F28FF52900083DFFE /* SignUpViewController.swift */,
 				B5F1FA37290B550E000BEE29 /* HomeViewController.swift */,
 				E08415EC291AE92A0065B493 /* SongViewController.swift */,
+				B5E664B92921A53500986D3C /* SongCell.swift */,
+				B5E664BB2921A56500986D3C /* SongInfoViewController.swift */,
+				B5E664BD2921B22200986D3C /* SongListViewController.swift */,
 			);
 			path = BOJBeats;
 			sourceTree = "<group>";
@@ -415,6 +424,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E664BA2921A53500986D3C /* SongCell.swift in Sources */,
+				B5E664BC2921A56500986D3C /* SongInfoViewController.swift in Sources */,
+				B5E664BE2921B22200986D3C /* SongListViewController.swift in Sources */,
 				B5F1FA38290B550E000BEE29 /* HomeViewController.swift in Sources */,
 				B572F01E28FF45CC0083DFFE /* LoginViewController.swift in Sources */,
 				B572EFEE28FF43C50083DFFE /* AppDelegate.swift in Sources */,

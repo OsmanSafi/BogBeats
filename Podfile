@@ -19,4 +19,6 @@ target 'BOJBeats' do
   pod 'Parse'
   pod 'AlamofireImage'
   pod 'MessageInputBar'
+  pod 'SwiftyJSON'
+
 end
