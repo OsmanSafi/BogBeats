@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class SongInfoViewController: UIViewController {
 
@@ -14,10 +15,23 @@ class SongInfoViewController: UIViewController {
     
     @IBOutlet weak var SongName: UILabel!
     
+    var song: [String:Any]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        SongName.text = song["name"] as? String
+        SongName.sizeToFit()
+                
+        let baseUrl = "https://api.napster.com/imageserver/v2/albums/"
+                
+        let backdropPath = song["id"] as! String
+                        
+        let backdropUrl = URL(string: baseUrl + backdropPath + "/images/500x500.jpg" )
+                        
+        AlbumImage.af_setImage(withURL: backdropUrl!)
     }
     
 
@@ -32,6 +46,8 @@ class SongInfoViewController: UIViewController {
     */
 
     @IBAction func playSong(_ sender: Any) {
+        
+        
     }
     
     @IBAction func backButtoninfo(_ sender: Any) {

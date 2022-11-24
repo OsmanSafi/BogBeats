@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class SongListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate { 
 
@@ -23,7 +24,7 @@ class SongListViewController: UIViewController, UITableViewDataSource, UITableVi
         
       
         // Do any additional setup after loading the view.
-                let url = URL(string: "https://api.napster.com/v2.2/artists/top?apikey=OGEwOTM0MmQtOWQ1Yy00MDk1LWI5MTYtYWZkOGUwZGE5Yzk5")!
+                let url = URL(string: "https://api.napster.com/v2.2/tracks/top?apikey=OGEwOTM0MmQtOWQ1Yy00MDk1LWI5MTYtYWZkOGUwZGE5Yzk5")!
                 let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
                 let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
                 let task = session.dataTask(with: request) { (data, response, error) in
@@ -33,7 +34,7 @@ class SongListViewController: UIViewController, UITableViewDataSource, UITableVi
                      } else if let data = data {
                             let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                          
-                            self.songs = dataDictionary["artists"] as! [[String:Any]]
+                            self.songs = dataDictionary["tracks"] as! [[String:Any]]
                          
                             self.tableView.reloadData()
                          
@@ -61,20 +62,22 @@ class SongListViewController: UIViewController, UITableViewDataSource, UITableVi
         let song = songs[indexPath.row]
 
         let title = song["name"] as! String
-                //let synopsis = song["overview"] as! String
+                
 
-                cell.SongName.text = title
-                //cell.synopsisLabel.text = synopsis
+        cell.SongName.text = title
                 
                 
-                //let baseUrl = "https://image.tmdb.org/t/p/w185"
-                //let posterPath = song["poster_path"] as! String
+        let baseUrl = "https://api.napster.com/imageserver/v2/albums/"
                 
-                //let posterUrl = URL(string: baseUrl + posterPath)
+        let backdropPath = song["id"] as! String
+        
+        print(backdropPath)
+                        
+        let albumUrl = URL(string: baseUrl + backdropPath + "/images/170x170.jpg" )
+        
+        cell.AlbumPoster.af_setImage(withURL: albumUrl!)
                 
-                //cell.posterView.af_setImage(withURL: posterUrl!)
-                
-                return cell
+        return cell
         
 //        let song = [indexPath.row]
         
@@ -84,15 +87,31 @@ class SongListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        print("Loading up the details screen")
+                
+                //Find the selected movie
+                let cell = sender as! UITableViewCell
+                let indexPath = tableView.indexPath(for: cell)!
+                
+                let song = songs[indexPath.row]
+                //Pass the selected movie to the details view controller
+                
+                let detailsViewController = segue.destination as! SongInfoViewController
+        
+                detailsViewController.song = song
+
+                
+                tableView.deselectRow(at: indexPath, animated: true)
+                
     }
-    */
+    
 
     @IBAction func backButton(_ sender: Any) {
         dismiss(animated: true , completion: nil)
