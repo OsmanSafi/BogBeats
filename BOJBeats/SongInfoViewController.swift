@@ -14,6 +14,8 @@ class SongInfoViewController: UIViewController {
     
     @IBOutlet weak var AlbumImage: UIImageView!
     
+   
+    @IBOutlet weak var Artist: UILabel!
     
     @IBOutlet weak var SongName: UILabel!
     
@@ -29,12 +31,15 @@ class SongInfoViewController: UIViewController {
         SongName.text = song["name"] as? String
         SongName.sizeToFit()
         
+        Artist.text = song["artistName"] as? String
+        Artist.sizeToFit()
+        
         let baseUrl = "https://api.napster.com/imageserver/v2/albums/"
         
         let backdropPath = song["albumId"] as! String
         
         
-        let albumUrl = URL(string: baseUrl + backdropPath + "/images/70x70.jpg" )
+        let albumUrl = URL(string: baseUrl + backdropPath + "/images/300x300.jpg" )
         
         
         AlbumImage.af_setImage(withURL: albumUrl!)
@@ -64,14 +69,16 @@ class SongInfoViewController: UIViewController {
     }
     func playSaveSound(){
         
-        let songmp3 = song["previewURL"] as! String
+        let songmp3 = song["previewURL"] as! URL
         
-        let path = Bundle.main.path(forResource: songmp3, ofType: nil)!
-        let url = URL(fileURLWithPath: songmp3)
+        //let path = Bundle.main.path(forResource: songmp3, ofType: nil)!
+        //let url = URL(fileURLWithPath: songmp3)
+        //let url = URL(string: songmp3)
+        //let url = URL(resource: songmp3)
         
         do {
             //create your audioPlayer in your parent class as a property
-            songplayer = try AVAudioPlayer(contentsOf: url)
+            songplayer = try AVAudioPlayer(contentsOf: songmp3)
             songplayer?.play()
         } catch {
             print("couldn't load the file")

@@ -24,7 +24,8 @@ class SongListViewController: UIViewController, UITableViewDataSource, UITableVi
         
       
         // Do any additional setup after loading the view.
-                let url = URL(string: "https://api.napster.com/v2.2/tracks/top?apikey=OGEwOTM0MmQtOWQ1Yy00MDk1LWI5MTYtYWZkOGUwZGE5Yzk5")!
+        
+                let url = URL(string: "https://api.napster.com/v2.2/tracks/top?apikey=OGEwOTM0MmQtOWQ1Yy00MDk1LWI5MTYtYWZkOGUwZGE5Yzk5&range=week")!
                 let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
                 let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
                 let task = session.dataTask(with: request) { (data, response, error) in
@@ -38,7 +39,6 @@ class SongListViewController: UIViewController, UITableViewDataSource, UITableVi
                          
                             self.tableView.reloadData()
                          
-                            print(dataDictionary)
                             
                             // TODO: Get the array of movies
                             // TODO: Store the movies in a property to use elsewhere
@@ -67,24 +67,21 @@ class SongListViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.SongName.text = title
                 
                 
-        let baseUrl = "https://api.napster.com/imageserver/v2/albums/"
+        let baseUrl = "https://api.napster.com/imageserver/v2/artists/"
                 
-        let backdropPath = song["albumId"] as! String
+        let backdropPath = song["artistId"] as! String
         
-        print(backdropPath)
                         
         let albumUrl = URL(string: baseUrl + backdropPath + "/images/70x70.jpg" )
-        print(albumUrl)
+        
         
         cell.AlbumPoster.af_setImage(withURL: albumUrl!)
+        
+        print (title)
+        print(albumUrl)
                 
         return cell
         
-//        let song = [indexPath.row]
-        
-        //cell.textLabel!.text = "row: \(indexPath.row)"
-        
-        //return cell
     }
     
 
