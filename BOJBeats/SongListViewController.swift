@@ -69,11 +69,12 @@ class SongListViewController: UIViewController, UITableViewDataSource, UITableVi
                 
         let baseUrl = "https://api.napster.com/imageserver/v2/albums/"
                 
-        let backdropPath = song["id"] as! String
+        let backdropPath = song["albumId"] as! String
         
         print(backdropPath)
                         
-        let albumUrl = URL(string: baseUrl + backdropPath + "/images/170x170.jpg" )
+        let albumUrl = URL(string: baseUrl + backdropPath + "/images/70x70.jpg" )
+        print(albumUrl)
         
         cell.AlbumPoster.af_setImage(withURL: albumUrl!)
                 

@@ -27,11 +27,14 @@ class SongInfoViewController: UIViewController {
                 
         let baseUrl = "https://api.napster.com/imageserver/v2/albums/"
                 
-        let backdropPath = song["id"] as! String
+        let backdropPath = song["albumId"] as! String
+        
+        print(backdropPath)
                         
-        let backdropUrl = URL(string: baseUrl + backdropPath + "/images/500x500.jpg" )
+        let albumUrl = URL(string: baseUrl + backdropPath + "/images/70x70.jpg" )
+        print(albumUrl)
                         
-        AlbumImage.af_setImage(withURL: backdropUrl!)
+        AlbumImage.af_setImage(withURL: albumUrl!)
     }
     
 
