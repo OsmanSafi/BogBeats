@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D8AEFE312C011AD662B4744 /* Pods_BOJBeatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC055B2CC4FECB80C61959A1 /* Pods_BOJBeatsTests.framework */; };
 		6F282E96C55EC43830AC0B9C /* Pods_BOJBeats_BOJBeatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A837C9CE9784C32CC41256A9 /* Pods_BOJBeats_BOJBeatsUITests.framework */; };
+		B538895A2932ABC8000A613E /* SecondSongInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53889592932ABC8000A613E /* SecondSongInfoViewController.swift */; };
 		B572EFEE28FF43C50083DFFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572EFED28FF43C50083DFFE /* AppDelegate.swift */; };
 		B572EFF028FF43C50083DFFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572EFEF28FF43C50083DFFE /* SceneDelegate.swift */; };
 		B572EFF528FF43C50083DFFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B572EFF328FF43C50083DFFE /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		A93B4FDD88EB5784ED79F1E8 /* Pods-BOJBeats-BOJBeatsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOJBeats-BOJBeatsUITests.release.xcconfig"; path = "Target Support Files/Pods-BOJBeats-BOJBeatsUITests/Pods-BOJBeats-BOJBeatsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B038475BA896C7C8189BDD58 /* Pods-BOJBeats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOJBeats.debug.xcconfig"; path = "Target Support Files/Pods-BOJBeats/Pods-BOJBeats.debug.xcconfig"; sourceTree = "<group>"; };
 		B202CE1CDBC90D558E5DA090 /* Pods_BOJBeats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOJBeats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53889592932ABC8000A613E /* SecondSongInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSongInfoViewController.swift; sourceTree = "<group>"; };
 		B572EFEA28FF43C50083DFFE /* BOJBeats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOJBeats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B572EFED28FF43C50083DFFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B572EFEF28FF43C50083DFFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				B5E664B92921A53500986D3C /* SongCell.swift */,
 				B5E664BB2921A56500986D3C /* SongInfoViewController.swift */,
 				B5E664BD2921B22200986D3C /* SongListViewController.swift */,
+				B53889592932ABC8000A613E /* SecondSongInfoViewController.swift */,
 			);
 			path = BOJBeats;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E664BA2921A53500986D3C /* SongCell.swift in Sources */,
+				B538895A2932ABC8000A613E /* SecondSongInfoViewController.swift in Sources */,
 				B5E664BC2921A56500986D3C /* SongInfoViewController.swift in Sources */,
 				B5E664BE2921B22200986D3C /* SongListViewController.swift in Sources */,
 				B5F1FA38290B550E000BEE29 /* HomeViewController.swift in Sources */,
