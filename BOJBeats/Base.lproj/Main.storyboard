@@ -230,7 +230,7 @@
                                 </prototypes>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9LF-ii-G1C">
-                                <rect key="frame" x="-6" y="0.0" width="417" height="44"/>
+                                <rect key="frame" x="-7" y="0.0" width="416" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
@@ -441,7 +441,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="2V8-nT-ohA">
-                                <rect key="frame" x="-17" y="0.0" width="418" height="44"/>
+                                <rect key="frame" x="-19" y="0.0" width="418" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
@@ -707,7 +707,7 @@
                                 </prototypes>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HDC-g4-LkG">
-                                <rect key="frame" x="-6" y="0.0" width="417" height="44"/>
+                                <rect key="frame" x="-8" y="0.0" width="417" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
@@ -792,7 +792,7 @@
                                 </prototypes>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uC5-3l-ARA">
-                                <rect key="frame" x="-6" y="0.0" width="417" height="44"/>
+                                <rect key="frame" x="-8" y="0.0" width="417" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
@@ -826,14 +826,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOW-yf-cmW">
-                                <rect key="frame" x="0.0" y="75.5" width="414" height="300"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="JQx-I9-yhx"/>
-                                    <constraint firstAttribute="width" constant="414" id="NSB-oR-esC"/>
-                                </constraints>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7Rg-jf-j48">
                                 <rect key="frame" x="20" y="543" width="374" height="272"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -849,7 +841,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SongName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uh9-nc-p8g">
-                                                    <rect key="frame" x="-16" y="15" width="0.0" height="64"/>
+                                                    <rect key="frame" x="119" y="15" width="235" height="64"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="250" id="hCg-Ws-twm"/>
                                                     </constraints>
@@ -858,7 +850,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jgz-71-XtA">
-                                                    <rect key="frame" x="17" y="11" width="0.0" height="80"/>
+                                                    <rect key="frame" x="21" y="11" width="70" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="70" id="8Sn-XP-uwb"/>
                                                         <constraint firstAttribute="width" constant="70" id="Lqy-9W-opD"/>
@@ -887,13 +879,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="More Songs By artist:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCS-Ep-T5S">
-                                <rect key="frame" x="20" y="501.5" width="380.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGw-nW-LRi">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGw-nW-LRi">
                                 <rect key="frame" x="-2" y="20.5" width="416" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="rD8-bM-yf6"/>
@@ -910,9 +896,28 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-7t-G5B">
-                                <rect key="frame" x="20" y="429" width="51.5" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-7t-G5B">
+                                <rect key="frame" x="20" y="394" width="219" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="219" id="Cc2-P0-iWd"/>
+                                    <constraint firstAttribute="height" constant="50" id="ufK-2Z-dH7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ayo-YY-HWo">
+                                <rect key="frame" x="0.0" y="85" width="414" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="RL8-TF-85J"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="270" id="gKr-Qg-mf1"/>
+                                    <constraint firstAttribute="height" constant="270" id="hJN-Wt-3CU"/>
+                                    <constraint firstAttribute="width" constant="414" id="yqQ-hy-pyt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="More Songs By artist:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCS-Ep-T5S">
+                                <rect key="frame" x="20" y="452" width="381" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -921,33 +926,32 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="KOW-yf-cmW" firstAttribute="leading" secondItem="dq1-5T-5Sh" secondAttribute="leading" id="3g7-d2-ZFx"/>
-                            <constraint firstItem="7Rg-jf-j48" firstAttribute="leading" secondItem="MCS-Ep-T5S" secondAttribute="leading" id="5Ut-oT-H9B"/>
-                            <constraint firstItem="dq1-5T-5Sh" firstAttribute="bottom" secondItem="7Rg-jf-j48" secondAttribute="bottom" constant="23" id="Ahf-jj-Cne"/>
-                            <constraint firstItem="dq1-5T-5Sh" firstAttribute="trailing" secondItem="MCS-Ep-T5S" secondAttribute="trailing" constant="13.5" id="Cs1-3N-T6l"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="7Rg-jf-j48" secondAttribute="bottom" constant="-11" id="N6K-j2-sUI"/>
-                            <constraint firstItem="t8M-7t-G5B" firstAttribute="leading" secondItem="dq1-5T-5Sh" secondAttribute="leading" constant="20" id="PrW-Y6-eo6"/>
-                            <constraint firstItem="t8M-7t-G5B" firstAttribute="top" secondItem="KOW-yf-cmW" secondAttribute="bottom" constant="53.5" id="T8q-Rb-YS9"/>
-                            <constraint firstItem="t8M-7t-G5B" firstAttribute="top" secondItem="KOW-yf-cmW" secondAttribute="bottom" constant="53.5" id="W94-xA-TxS"/>
-                            <constraint firstItem="MCS-Ep-T5S" firstAttribute="leading" secondItem="dq1-5T-5Sh" secondAttribute="leading" constant="20" id="WW2-OZ-UIK"/>
-                            <constraint firstItem="dq1-5T-5Sh" firstAttribute="trailing" secondItem="t8M-7t-G5B" secondAttribute="trailing" constant="342.5" id="Zqx-f5-3YZ"/>
-                            <constraint firstItem="7Rg-jf-j48" firstAttribute="leading" secondItem="dq1-5T-5Sh" secondAttribute="leading" constant="20" id="ehc-9Q-6ew"/>
-                            <constraint firstItem="MCS-Ep-T5S" firstAttribute="top" secondItem="t8M-7t-G5B" secondAttribute="bottom" constant="49.5" id="hHk-1G-KDB"/>
-                            <constraint firstItem="KOW-yf-cmW" firstAttribute="top" secondItem="GGw-nW-LRi" secondAttribute="bottom" constant="11" id="oeU-gN-0i1"/>
-                            <constraint firstItem="KOW-yf-cmW" firstAttribute="trailing" secondItem="dq1-5T-5Sh" secondAttribute="trailing" id="pa0-Pb-XUd"/>
-                            <constraint firstItem="7Rg-jf-j48" firstAttribute="centerX" secondItem="KOW-yf-cmW" secondAttribute="centerX" id="sVz-zb-2Jt"/>
-                            <constraint firstItem="MCS-Ep-T5S" firstAttribute="top" secondItem="t8M-7t-G5B" secondAttribute="bottom" constant="49.5" id="spr-RC-VoY"/>
-                            <constraint firstItem="dq1-5T-5Sh" firstAttribute="trailing" secondItem="7Rg-jf-j48" secondAttribute="trailing" constant="20" id="vxi-fr-2Ta"/>
-                            <constraint firstItem="7Rg-jf-j48" firstAttribute="top" secondItem="MCS-Ep-T5S" secondAttribute="bottom" constant="21" id="wG4-wA-ZVT"/>
-                            <constraint firstItem="7Rg-jf-j48" firstAttribute="top" secondItem="MCS-Ep-T5S" secondAttribute="bottom" constant="21" id="zYl-fU-Y5h"/>
+                            <constraint firstItem="ayo-YY-HWo" firstAttribute="top" secondItem="GGw-nW-LRi" secondAttribute="bottom" constant="20.5" id="3fH-Px-UsY"/>
+                            <constraint firstItem="ayo-YY-HWo" firstAttribute="leading" secondItem="dq1-5T-5Sh" secondAttribute="leading" id="4B7-iR-T5H"/>
+                            <constraint firstItem="dq1-5T-5Sh" firstAttribute="bottom" secondItem="7Rg-jf-j48" secondAttribute="bottom" constant="23" id="6AL-Rt-zFe"/>
+                            <constraint firstItem="t8M-7t-G5B" firstAttribute="leading" secondItem="dq1-5T-5Sh" secondAttribute="leading" constant="20" id="6OT-Pf-KNT"/>
+                            <constraint firstItem="7Rg-jf-j48" firstAttribute="top" secondItem="MCS-Ep-T5S" secondAttribute="bottom" constant="8" id="70f-6Y-gYu"/>
+                            <constraint firstItem="MCS-Ep-T5S" firstAttribute="leading" secondItem="dq1-5T-5Sh" secondAttribute="leading" constant="20" id="C5w-kO-kjU"/>
+                            <constraint firstItem="dq1-5T-5Sh" firstAttribute="trailing" secondItem="7Rg-jf-j48" secondAttribute="trailing" constant="20" id="Fzq-GQ-yce"/>
+                            <constraint firstItem="7Rg-jf-j48" firstAttribute="leading" secondItem="dq1-5T-5Sh" secondAttribute="leading" constant="20" id="G6S-6n-ext"/>
+                            <constraint firstItem="GGw-nW-LRi" firstAttribute="leading" secondItem="4Nw-Zv-o4p" secondAttribute="leading" constant="-2" id="Mlu-g8-Y5E"/>
+                            <constraint firstItem="dq1-5T-5Sh" firstAttribute="trailing" secondItem="MCS-Ep-T5S" secondAttribute="trailing" constant="13.5" id="ReD-Jp-nJ8"/>
+                            <constraint firstItem="t8M-7t-G5B" firstAttribute="top" secondItem="ayo-YY-HWo" secondAttribute="bottom" constant="39" id="WhF-l2-Whi"/>
+                            <constraint firstItem="ayo-YY-HWo" firstAttribute="trailing" secondItem="dq1-5T-5Sh" secondAttribute="trailing" id="Wkg-Ih-nKr"/>
+                            <constraint firstItem="MCS-Ep-T5S" firstAttribute="top" secondItem="t8M-7t-G5B" secondAttribute="bottom" constant="8" id="XAS-sw-lHQ"/>
+                            <constraint firstItem="t8M-7t-G5B" firstAttribute="top" secondItem="ayo-YY-HWo" secondAttribute="bottom" constant="39" id="YMs-2z-mh9"/>
+                            <constraint firstItem="GGw-nW-LRi" firstAttribute="trailing" secondItem="dq1-5T-5Sh" secondAttribute="trailing" id="ZHD-WF-FQr"/>
+                            <constraint firstItem="MCS-Ep-T5S" firstAttribute="top" secondItem="t8M-7t-G5B" secondAttribute="bottom" constant="8" id="aJw-MP-Yhl"/>
+                            <constraint firstItem="ayo-YY-HWo" firstAttribute="top" secondItem="GGw-nW-LRi" secondAttribute="bottom" constant="20.5" id="f9U-6k-RKs"/>
+                            <constraint firstItem="dq1-5T-5Sh" firstAttribute="trailing" secondItem="t8M-7t-G5B" secondAttribute="trailing" constant="175" id="hhi-kA-kL6"/>
+                            <constraint firstItem="GGw-nW-LRi" firstAttribute="top" secondItem="4Nw-Zv-o4p" secondAttribute="top" constant="20.5" id="jVq-aK-61o"/>
+                            <constraint firstItem="7Rg-jf-j48" firstAttribute="top" secondItem="MCS-Ep-T5S" secondAttribute="bottom" constant="8" id="pVd-yy-P4K"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8rQ-gm-yEY"/>
                     <connections>
-                        <outlet property="AlbumImage" destination="KOW-yf-cmW" id="Pez-UI-oAu"/>
-                        <outlet property="SongName" destination="t8M-7t-G5B" id="AKl-IF-81Y"/>
                         <outlet property="artistName" destination="t8M-7t-G5B" id="HgU-DE-sDu"/>
-                        <outlet property="artistPik" destination="KOW-yf-cmW" id="jwG-pT-Mn7"/>
+                        <outlet property="artistPik" destination="ayo-YY-HWo" id="oLN-fs-g08"/>
                         <outlet property="tableView" destination="7Rg-jf-j48" id="izq-Ql-vz0"/>
                     </connections>
                 </viewController>
