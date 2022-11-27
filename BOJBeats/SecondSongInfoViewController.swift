@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AlamofireImage
+import AVFoundation
 
 class SecondSongInfoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
