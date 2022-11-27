@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class TopArtistViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -71,9 +72,6 @@ class TopArtistViewController: UIViewController, UITableViewDataSource, UITableV
         
         
         cell.AlbumPoster.af_setImage(withURL: albumUrl!)
-        
-        print (title)
-        print(albumUrl)
                 
         return cell
         
