@@ -20,7 +20,10 @@ class SecondSongInfoViewController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var AlbumImage: UIImageView!
     
     var songss: [String:Any]!
+    
     var moreMusic = [[String:Any]]()
+    
+    var player: AVPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,8 +76,30 @@ class SecondSongInfoViewController: UIViewController, UITableViewDataSource, UIT
     task.resume()
     }
     
-    @IBAction func playsong(_ sender: Any) {
+    @IBAction func playSong(_ sender: Any) {
+        playSaveSound()
+    }
+    
+    func playSaveSound(){
+        let songmp3 = songss["previewURL"] as! String
         
+        let url = URL(string: songmp3)
+        
+        print("playing \(url)")
+
+           do {
+
+               let playerItem = AVPlayerItem(url: url!)
+
+               self.player = try AVPlayer(playerItem:playerItem)
+               player!.volume = 1.0
+               player!.play()
+           } catch let error as NSError {
+               self.player = nil
+               print(error.localizedDescription)
+           } catch {
+               print("AVAudioPlayer init failed")
+           }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

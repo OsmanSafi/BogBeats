@@ -20,7 +20,7 @@ class SongInfoViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var SongName: UILabel!
     
-    var songplayer: AVAudioPlayer?
+    var player: AVPlayer?
     
     var song: [String:Any]!
     
@@ -155,20 +155,24 @@ class SongInfoViewController: UIViewController, UITableViewDataSource, UITableVi
         dismiss(animated: true , completion: nil)
     }
     func playSaveSound(){
+        let songmp3 = song["previewURL"] as! String
         
-        let songmp3 = song["previewURL"] as! URL
+        let url = URL(string: songmp3)
         
-        //let path = Bundle.main.path(forResource: songmp3, ofType: nil)!
-        //let url = URL(fileURLWithPath: songmp3)
-        //let url = URL(string: songmp3)
-        //let url = URL(resource: songmp3)
-        
-        do {
-            //create your audioPlayer in your parent class as a property
-            songplayer = try AVAudioPlayer(contentsOf: songmp3)
-            songplayer?.play()
-        } catch {
-            print("couldn't load the file")
-        }
+        print("playing \(url)")
+
+           do {
+
+               let playerItem = AVPlayerItem(url: url!)
+
+               self.player = try AVPlayer(playerItem:playerItem)
+               player!.volume = 1.0
+               player!.play()
+           } catch let error as NSError {
+               self.player = nil
+               print(error.localizedDescription)
+           } catch {
+               print("AVAudioPlayer init failed")
+           }
     }
 }
