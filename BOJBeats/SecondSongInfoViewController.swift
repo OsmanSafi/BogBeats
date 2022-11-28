@@ -76,9 +76,10 @@ class SecondSongInfoViewController: UIViewController, UITableViewDataSource, UIT
     task.resume()
     }
     
-    @IBAction func playsong(_ sender: Any) {
+    @IBAction func playSong(_ sender: Any) {
         playSaveSound()
     }
+    
     func playSaveSound(){
         let songmp3 = songss["previewURL"] as! String
         
