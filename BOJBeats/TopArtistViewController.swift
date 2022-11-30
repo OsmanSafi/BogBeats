@@ -23,7 +23,7 @@ class TopArtistViewController: UIViewController, UITableViewDataSource, UITableV
       
         // Do any additional setup after loading the view.
         
-                let url = URL(string: "http://api.napster.com/v2.2/artists/top?apikey=OGEwOTM0MmQtOWQ1Yy00MDk1LWI5MTYtYWZkOGUwZGE5Yzk5&range=week")!
+                let url = URL(string: "http://api.napster.com/v2.2/artists/top?apikey=OGEwOTM0MmQtOWQ1Yy00MDk1LWI5MTYtYWZkOGUwZGE5Yzk5")!
                 let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
                 let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
                 let task = session.dataTask(with: request) { (data, response, error) in
