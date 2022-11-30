@@ -151,6 +151,12 @@ class SongInfoViewController: UIViewController, UITableViewDataSource, UITableVi
         playSaveSound()
     }
     
+    @IBAction func pause(_ sender: Any) {
+        player?.pause()
+        
+    }
+    
+    
     @IBAction func backButtoninfo(_ sender: Any) {
         dismiss(animated: true , completion: nil)
     }
