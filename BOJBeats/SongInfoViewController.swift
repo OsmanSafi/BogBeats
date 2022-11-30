@@ -14,11 +14,11 @@ class SongInfoViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var AlbumImage: UIImageView!
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var SongName: UILabel!
     
     @IBOutlet weak var Artist: UILabel!
     
-    @IBOutlet weak var SongName: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     var player: AVPlayer?
     
@@ -146,20 +146,23 @@ class SongInfoViewController: UIViewController, UITableViewDataSource, UITableVi
      }
      
     
+    
+    
     @IBAction func playSong(_ sender: Any) {
-        
         playSaveSound()
     }
     
+   
     @IBAction func pause(_ sender: Any) {
         player?.pause()
-        
     }
     
-    
-    @IBAction func backButtoninfo(_ sender: Any) {
+   
+    @IBAction func back(_ sender: Any) {
         dismiss(animated: true , completion: nil)
     }
+    
+   
     func playSaveSound(){
         let songmp3 = song["previewURL"] as! String
         
